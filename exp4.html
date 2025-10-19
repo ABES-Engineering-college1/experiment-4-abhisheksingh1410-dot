@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL ROOM BOOKING FORM</title>
+    <style> 
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eceaea;
+        }
+        .form-Container{
+            width: 600px;
+            /* padding: 300px; */
+            background: #f6f8f5;
+            /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+            border-radius: 3px;
+            border : 2px solid black;
+            border-top: 3px solid #0c0c0c;
+            text-align: center;
+            height: 600px;
+          
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class ="container">
+        <div class = "form-Container">
+ <form >
+    <h1> HOTEL ROOM BOOKING FORM </h1>
+    <label for ="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for = "email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    <label for = "phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <br><br>
+    <label for ="checkin">Check-in Date:</label>
+    <input type="date" id="checkin" name="checkin" required>
+    <br><br>
+    <label for ="checkout">Check-out Date:</label>
+    <input type="date" id="checkout" name="checkout" required>
+    <br><br>
+    <label for ="roomtype">Room Type:</label>
+    <select id="roomtype" name="roomtype" required>
+      <option value="single">Single Room</option>
+      <option value="double">Double Room</option>
+    </select>
+    <br><br>
+    <label for ="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" min="1" required>
+    <br><br>
+    <label for ="requests">Special Requests:</label>
+    <br><br>
+
+    <textarea id="requests" name="requests" rows="4" cols="40"></textarea>
+    <br><br>
+    <input type="submit" value="Book Now">
+    <input type ="reset" value="Reset Form"> 
+
+    
+  </form>  
+            
+        </div>
+    </div>
+ 
+</body>
+</html>
